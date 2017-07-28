@@ -8,7 +8,11 @@ exclude: ["node_modules", "gulpfile.js", "package.json"]
 title: Matheux
 email: gauss27@ciencias.unam.mx
 description: A small and simple site I made to test out Jekyll.
+<<<<<<< HEAD
 baseurl: "" # the subpath of your site, e.g. /blog
+=======
+baseurl: "shiftshuffle.github.io/jblog/" # the subpath of your site, e.g. /blog
+>>>>>>> 4560a1ecf7ae092d72ee702b78b86605c70acbcb
 
 # Where can people find your site?
 url: "shiftshuffle.github.io/jblog"
