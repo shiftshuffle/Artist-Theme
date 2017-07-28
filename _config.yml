@@ -9,12 +9,12 @@ title: M A T H E U X
 email: gauss27@ciencias.unam.mx
 description: A small and simple site I made to test out Jekyll.
 
-baseurl: "/jblog" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 
 
 
 # Where can people find your site?
-url: "shiftshuffle.github.io"
+url: "shiftshuffle.github.io/jblog"
 # When developing, set this ^ equal to whatever localhost you're using
 
 # Socail Media links
