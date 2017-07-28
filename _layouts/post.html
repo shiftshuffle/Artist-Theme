@@ -12,10 +12,12 @@ title: Home
 
 
 <div class="xs-12 imgBack textCenter vertCenter banner" style='background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ), url({{ site.url }}/assets/img/{{ page.thumbnail }})'>
+<a href='{{ site.baseurl }}{{ post.url }}'>
   <div>
-    <a class='caps post-title' href='{{ post.url }}'>{{ page.title }}</a>
+    <a class='caps post-title' href='{{ site.baseurl }}{{ post.url }}'>{{ page.title }}</a>
     <p class='meta'>{{ page.date | date_to_long_string }} / by {{ page.author }}</p>
   </div>
+</a>
 </div>
 
 <div class='divider xs-12 topBarTrigger'></div>
@@ -36,7 +38,7 @@ title: Home
     {% assign categories = page.categories %}
   {% endif %}
   {% for category in categories %}
-  <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+  <a href="{{site.url}}/categories/{{category|slugize}}">{{category}}</a>
   {% unless forloop.last %}&nbsp;{% endunless %}
   {% endfor %}
 </div>
