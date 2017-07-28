@@ -7,6 +7,15 @@
     <meta name="viewport" content="width=device-width">
     <!-- <Custo></Custo>m CSS -->
     <link rel="stylesheet" href="{{ site.url }}/assets/css/main.css">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+{% include mathjax_support.html %}
   </head>
   <body>
 
@@ -15,7 +24,7 @@
 
 
     <main id="panel">
-      <button class='toggle-button'><span class='bar'></span><span class='bar'></span><span class='bar'></span></button>
+      <i class='toggle-button'><span class='bar'></span><span class='bar'></span><span class='bar'></span></i>
       <div class='content-wrap'>
         {{ content }}
       </div>

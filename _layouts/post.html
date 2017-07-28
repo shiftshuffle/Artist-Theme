@@ -3,9 +3,13 @@ layout: default
 title: Home
 ---
 
-<div class='xs-12 topBar hidden'>
-  <p>{{ page.title }}</p>
-</div>
+  <div class='xs-12 topBar hidden'>
+    <!-- <a id="logo-container2" href="#" class="brand-logo2"></a> -->
+    <a id="logo-container" href="#" class="brand-logo"></a>
+
+  </div>
+
+
 
 <div class="xs-12 imgBack textCenter vertCenter banner" style='background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ), url({{ site.url }}/assets/img/{{ page.thumbnail }})'>
   <div>
@@ -16,12 +20,28 @@ title: Home
 
 <div class='divider xs-12 topBarTrigger'></div>
 
+
+
 <div class='post-wrap'>
+
   <h1>{{ page.title }}</h1>
   <p class='meta'>
     {{ page.author }} // {{ page.date | date_to_long_string }}
   </p>
 
+  <div class="post-categories">
+  {% if post %}
+    {% assign categories = post.categories %}
+  {% else %}
+    {% assign categories = page.categories %}
+  {% endif %}
+  {% for category in categories %}
+  <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+  {% unless forloop.last %}&nbsp;{% endunless %}
+  {% endfor %}
+</div>
+
   {{ content }}
+
 
 </div>

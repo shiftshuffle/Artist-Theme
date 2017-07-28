@@ -17,6 +17,7 @@ html {
 /**
  * Remove default margin.
  */
+
 body {
   margin: 0; }
 
@@ -387,7 +388,8 @@ a {
   text-decoration: none;
   color: black; }
   a:hover {
-    text-decoration: underline; }
+    text-decoration: underline;
+   }
 
 .post-title {
   font-weight: 700;
@@ -416,10 +418,10 @@ a {
   font-weight: 300; }
 
 .meta {
-  color: #FF8F00; }
+  color: rgb(110, 211, 196); }
 
 .accent {
-  color: #9FA8DA; }
+  color: rgba(77, 134, 187, 0.73); }
 
 img::-moz-selection {
   background: transparent; }
@@ -480,18 +482,20 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between; }
   #menu.slideout-menu .flexbox nav h4 {
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+  font-size: 26px !important;}
   #menu.slideout-menu .flexbox nav a {
     display: block;
     padding: 5px 0;
-    font-size: 16px;
-    color: #FF8F00;
-    font-weight: 500; }
+    font-size: 22px;
+    color: rgb(110, 211, 196);
+    font-weight: 500;
+      }
   #menu.slideout-menu .flexbox .details {
     border-top: solid 2px #757575;
     padding-top: 10px; }
     #menu.slideout-menu .flexbox .details b, #menu.slideout-menu .flexbox .details a {
-      color: #FF8F00; }
+      color: rgb(110, 211, 196); }
     #menu.slideout-menu .flexbox .details p {
       margin-top: 0; }
 
@@ -503,7 +507,7 @@ main.pushLeft {
   overflow: hidden; }
 
 main .toggle-button {
-  z-index: 1;
+  z-index: 3 ;
   position: fixed;
   margin-left: 15px;
   width: 50px;
@@ -517,9 +521,9 @@ main .toggle-button {
   main .toggle-button .bar {
     display: block;
     position: absolute;
-    height: 3px;
+    height: 2px;
     width: 100%;
-    background: #FF8F00;
+    background: #6ed3c4;
     border-radius: 9px;
     opacity: 1;
     left: 0;
@@ -528,23 +532,23 @@ main .toggle-button {
     transition: .30s ease-in-out; }
   main .toggle-button .bar:nth-child(1) {
     top: 12px;
-    width: 70%;
-    margin: 0 15%; }
+    width: 80%;
+    margin: 0 0%; }
     main .toggle-button .bar:nth-child(1).open {
       top: 22px;
       -webkit-transform: rotate(135deg);
               transform: rotate(135deg); }
   main .toggle-button .bar:nth-child(2) {
-    top: 22px;
-    width: 90%;
-    margin: 0 5%; }
+    top: 19px;
+    width: 80%;
+    margin: 0 0%; }
     main .toggle-button .bar:nth-child(2).open {
       opacity: 0;
       left: -60px; }
   main .toggle-button .bar:nth-child(3) {
-    top: 32px;
-    width: 70%;
-    margin: 0 15%; }
+    top: 26px;
+    width: 80%;
+    margin: 0 0%; }
     main .toggle-button .bar:nth-child(3).open {
       top: 22px;
       -webkit-transform: rotate(-135deg);
@@ -576,7 +580,7 @@ footer {
     padding: 40px 0 40px 40px;
     max-width: 300px; }
     footer div a {
-      color: #FF8F00; }
+      color: rgb(110, 211, 196); }
 
 .post-wrap.category {
   display: -webkit-flex;
@@ -653,8 +657,8 @@ footer {
   .flexbox.wrap .sm-6 {
     height: 325px; }
   .flexbox.wrap .sm-4 {
-    height: 225px; }
-
+    /*height: 225px;*/
+}
 .flexbox-contain {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -680,7 +684,7 @@ footer {
 .divider {
   width: 100%;
   height: 15px;
-  background: #FF8F00;
+  background: rgb(110, 211, 196);
   clear: both; }
 
 .imgBack {
@@ -698,9 +702,10 @@ footer {
           filter: saturate(70%);
   cursor: pointer; }
 
-.textPreview {
-  padding: 0 50px;
-  min-height: 300px; }
+  .textPreview {
+      padding: 50px 10px 50px 10px;
+      min-height: 300px;
+  }
   .textPreview div {
     padding: 20px 0; }
 
@@ -775,20 +780,31 @@ button.download {
   margin: auto;
   font-size: 18px; }
 
+
+
 .topBar {
   position: fixed;
-  background: white;
-  border-bottom: solid 4px #FF8F00;
-  opacity: .95; }
+  /*background: white;*/
+  background-color: rgba(255,255,255,1) !important;
+  border-bottom: solid 4px rgba(110, 211, 196, 0.61);
+  /*background-image: url(../img/work1.jpg);*/
+  opacity: 1;
+  z-index: 2 !important;
+}
+
+
   .topBar p {
     max-width: 710px;
     margin: auto;
-    color: #FF8F00;
+    color: #212121;
     font-weight: 700;
+
+
     text-align: left; }
     @media (max-width: 910px) {
       .topBar p {
-        margin-left: 70px; } }
+        margin-left: 70px;
+         } }
 
 .banner {
   height: 300px; }
@@ -796,9 +812,45 @@ button.download {
     .banner {
       height: 450px; } }
 
+
+
+
+.repy::before{
+  background: repeat-y url(../img/topography.jpg);
+  /*background-repeat: repeat-y !important;*/
+  content: "";
+
+    /*width:100px;
+    height:100px;*/
+  position: absolute;
+  z-index: -1;
+  /*top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;*/
+
+   /*background-size: 100%;*/
+   opacity: 0.1;
+   /*filter:alpha(opacity=10);*/
+   /*height:inherit;
+   */
+   width:98%;
+   height:100%;
+
+   /*background-size: contain;*/
+   background-size:100% auto;
+   /*-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;*/
+}
+
 .post-wrap {
   max-width: 710px;
   padding: 10px 10px 50px 10px;
+
+
+
   margin: auto; }
   .post-wrap h1 {
     margin-bottom: 0; }
@@ -813,7 +865,7 @@ button.download {
   .post-wrap ul {
     margin-left: 28px; }
   .post-wrap a {
-    color: #9FA8DA;
+    color: rgba(8, 86, 189, 0.79);
     font-weight: 500; }
     .post-wrap a.post-title {
       color: #212121; }
@@ -840,3 +892,189 @@ button.download {
 
 .hidden {
   display: none; }
+
+
+
+
+  /*##############################*/
+  /*navbar bootstrap*/
+  /*##############################*/
+
+  @media (min-width: 768px){
+.navbar-nav>li {
+    float: none !important;
+}
+}
+
+.panel-default {
+     border-color: #212121 !important;
+}
+
+.panel {
+    background-color: #212121 !important;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: underline;
+    background-color: #212121 !important;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: underline !important;
+
+}
+
+.post-title{
+    color:rgba(19, 42, 112, 0.44);
+
+}
+
+
+body {
+    font: 400 18px/1 "adobe-caslon-pro","Adobe Caslon Pro",serif !important;
+}
+
+.post-title {
+    font-family: "Libre Baskerville",serif;
+    display: block;
+    font-weight: 700;
+    font-size: 24px;
+    /*text-align: center;*/
+    line-height: 1.4;
+    color: #222;
+}
+
+.imgBack .post-title {
+    color: white;
+    /*font-size: 36px;*/
+    font-family: "Libre Baskerville",serif;
+    display: block;
+    font-weight: 300;
+    font-size: 24px;
+    /*text-align: center;*/
+    line-height: 1.4;
+    margin-top: 230px;
+}
+
+@media only screen and (min-width: 480px)
+screen.css:1
+.post-title {
+    font-size: 5vw;
+}
+
+
+
+/*##################################
+logos
+##################################*/
+
+#logo-container{
+    display: inline-block;
+    background-image: url(../img/shiftmatheux.png);
+
+    /*opacity: 0.5;
+    filter: alpha(opacity=50);*/
+
+
+    background-repeat: no-repeat;
+    padding-bottom: 20px;
+    width: 200px;
+    height:10px;
+
+    margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: -30px;
+    /*position: absolute;*/
+/*left: 50%;
+top: 10px;*/
+/*margin-left: 20rem;*/
+    background-size: contain;
+    /*background-position: 0 0;*/
+
+
+
+    float: right;
+    right: -50%;
+
+
+    position: relative;
+
+    /*margin: 0 auto;*/
+    /*max-width: 1280px;*/
+    /*width: 97%;*/
+    /*top:-12rem;*/
+
+}
+
+#logo-container2{
+    display: inline-block;
+    background-image: url(../img/js.png);
+
+    /*opacity: 0.5;
+    filter: alpha(opacity=50);*/
+
+    background-repeat: no-repeat;
+    padding-bottom: 7%;
+    /*padding-top: 2%;*/
+    width: 30px;
+    height:10px;
+    background-size: contain;
+    background-position: 0px 0px;
+    /*padding: 2rem 2rem;*/
+
+}
+
+nav .brand-logo2 {
+  position: absolute;
+  /*float: left;*/
+  color: black;
+  display: inline-block;
+  /*font-size: 2.1rem;*/
+  padding: 0;
+  white-space: nowrap;
+  /*width: 60px;*/
+
+  left: -3em;
+    /*padding: 2rem 2rem;*/
+
+}
+
+@media only screen and (max-width: 992px) {
+  nav .logo-container2{
+    left: 2.5em;
+
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+
+.logo-container2{
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 97%;
+  top:-12rem;
+
+}
+
+@media only screen and (min-width: 601px) {
+  .logo-container2{
+    width: 85%;
+    top:-4rem;
+
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .logo-container2{
+    width: 85%;
+    top:-1rem;
+  }
+}
+
+.container2 .row {
+  margin-left: -0.75rem;;
+  margin-right: -0.75rem;
+}

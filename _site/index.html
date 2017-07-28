@@ -6,40 +6,213 @@
     <title>Home</title>
     <meta name="viewport" content="width=device-width">
     <!-- <Custo></Custo>m CSS -->
-    <link rel="stylesheet" href="http://localhost:3000/assets/css/main.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<!-- <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
+    tex2jax: {
+      inlineMath: [ ['$','$'], ['\(', '\)'] ],
+      displayMath: [ ['$$','$$'] ],
+      processEscapes: true,
+    }
+  });
+</script> -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true,
+        processEnvironments: true
+    },
+
+
+
+    "HTML-CSS": {
+        styles: {'.MathJax_Display': {"margin": 0}},
+        linebreaks: { automatic: true }
+    },
+     config: ["MMLorHTML.js"],
+jax: ["input/TeX","input/MathML","output/HTML-CSS","output/NativeMML", "output/PreviewHTML"],
+extensions: ["tex2jax.js","mml2jax.js","MathMenu.js","MathZoom.js", "fast-preview.js", "AssistiveMML.js"],
+TeX: {
+extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+}
+
+});
+</script>
+
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<!-- http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML -->
+<!-- https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML -->
+
   </head>
   <body>
 
-    <div id="menu" class="slideout-menu slideout-closed"><div class="flexbox"><nav><h4>Pages</h4><a href="http://localhost:3000">Home</a><a href="http://localhost:3000/about.html">About</a><a href="http://localhost:3000/archives.html">Archives</a><h4>Categories</h4><a href="http://localhost:3000/categories/category1.html">Category 1</a></nav><div class="details"><b>Artist Theme</b><p>A Jekyll Theme</p><p> 
-A minimal theme Jekyll theme with all the basics you need. Designed by <a>Nina</a>  , and free on <a>Github</a></p></div></div></div>
+    <div id="menu" class="slideout-menu slideout-closed"><div class="flexbox">
+  <nav>
+    <h4>Pages</h4>
+    <a href="http://localhost:4000">Home</a>
+    <a href="http://localhost:4000/about.html">About</a>
+    <a href="http://localhost:4000/archives.html">Archives</a>
+    <h4>Categories</h4>
+    <!-- <a href="http://localhost:4000/categories/category1.html">Category 1</a> -->
+    <!-- Brand and toggle get grouped for better mobile display -->
+
+
+    <!-- Main Menu -->
+    <div class="side-menu-container">
+        <ul class="nav navbar-nav">
+
+
+            <!-- Dropdown-->
+            <li class="panel panel-default" id="dropdown">
+                <a data-toggle="collapse" href="#dropdown-lvl1">
+                    <span class="glyphicon glyphicon-tag"></span> Tags <span class="caret"></span>
+                </a>
+
+                <!-- Dropdown level 1 -->
+                <div id="dropdown-lvl1" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <ul class="nav navbar-nav">
+                            <li><a href="http://localhost:4000/categories/category1.html">Category1</a></li>
+                            <li><a href="http://localhost:4000/categories/diary.html">Diary</a></li>
+                            <li><a href="http://localhost:4000/categories/math.html">Math</a></li>
+
+                            <!-- Dropdown level 2 -->
+                            <li class="panel panel-default" id="dropdown">
+                                <a data-toggle="collapse" href="#dropdown-lvl2">
+                                    <span class="glyphicon glyphicon-off"></span> Sub Level <span class="caret"></span>
+                                </a>
+                                <div id="dropdown-lvl2" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ul class="nav navbar-nav">
+                                            <li><a href="#">Link</a></li>
+                                            <li><a href="#">Link</a></li>
+                                            <li><a href="#">Link</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+
+            <!-- <li><a href="#"><span class="glyphicon glyphicon-bookmark"></span> Link</a></li> -->
+
+            <!-- Dropdown-->
+            <li class="panel panel-default" id="dropdown">
+                <a data-toggle="collapse" href="#dropdown-lvl3">
+                    <span class="glyphicon glyphicon-calendar"></span> Date <span class="caret"></span>
+                </a>
+
+                <!-- Dropdown level 3 -->
+                <div id="dropdown-lvl3" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+
+                            <!-- Dropdown level 4 -->
+                            <li class="panel panel-default" id="dropdown">
+                                <a data-toggle="collapse" href="#dropdown-lvl4">
+                                    <span class="glyphicon glyphicon-off"></span> Sub Level <span class="caret"></span>
+                                </a>
+                                <div id="dropdown-lvl4" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ul class="nav navbar-nav">
+                                            <li><a href="#">Link</a></li>
+                                            <li><a href="#">Link</a></li>
+                                            <li><a href="#">Link</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </div><!-- /.navbar-collapse -->
+  </nav>
+<div class="details">
+  <b>Matheux</b><p>A Jekyll Theme</p>
+  <p> A minimal theme Jekyll theme with all the basics you need. Designed by <a>Nina</a>  , and free on <a>Github</a></p>
+</div></div></div>
+
 
 
 
     <main id="panel">
-      <button class='toggle-button'><span class='bar'></span><span class='bar'></span><span class='bar'></span></button>
+      <i class='toggle-button'><span class='bar'></span><span class='bar'></span><span class='bar'></span></i>
       <div class='content-wrap'>
         
-<div class="xs-12 imgBack link textCenter vertCenter grow tall" style='background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ), url(http://localhost:3000/assets/img/person1.jpeg)'>
+<div class="xs-12 imgBack link textCenter vertCenter grow tall" style='background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ), url(http://localhost:4000/assets/img/ama-dablam-nepal-mountains-hd-wallpaper.jpg)'>
   <div>
-    <a class='caps post-title' href='/category1/2016/01/31/hello-portland.html'>Hello, Portland</a>
-    <p class='meta'>31 January 2016 / by Nina Petropoulos</p>
+    <a class='caps post-title' href='/math/2016/12/11/examples.html'>Examples</a>
+    <p class='meta'>11 December 2016 / by Shift Shuffle</p>
   </div>
 </div>
 
 
 <div class='flexbox wrap'>
 
-  <div class="sm-6 imgBack link vertCenter textCenter grow short" style='background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ), url(http://localhost:3000/assets/img/food1.jpg)'>
+  <div class="sm-6 imgBack link vertCenter textCenter grow short" style='background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ), url(http://localhost:4000/assets/img/my-cathedral-by-philippe-clairo-navajo-nation-parks-2560x1600.jpg)'>
+    <div>
+      <a class='caps post-title' href='/category1/crypto/math/number-theory/2016/11/11/riemann-zeta-function.html'>Riemann Zeta Function</a>
+      <p class='meta'>11 November 2016 / by Shift Shuffle</p>
+    </div>
+  </div>
+
+</div>
+<div class='divider xs-12 grow'></div>
+
+<div class='flexbox'>
+
+  <div class="sm-6 textPreview vertCenter grow short">
     <div>
       <a class='caps post-title' href='/category1/2016/01/31/you-need-ten-posts.html'>You Need Ten Posts</a>
+      <p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut <a href="example.net">enim ad minim</a> veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+</p>
       <p class='meta'>31 January 2016 / by Nina Petropoulos</p>
     </div>
   </div>
 
-  <div class="sm-6 imgBack link vertCenter textCenter grow short" style='background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ), url(http://localhost:3000/assets/img/building1.jpg)'>
+</div>
+
+<div class='flexbox wrap'>
+
+  <div class="sm-4 imgBack link vertCenter textCenter grow" style='background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ), url(http://localhost:4000/assets/img/city2.jpg)'>
     <div>
-      <a class='caps post-title' href='/category2/2016/01/30/basic-use.html'>Basic Use: A Guide</a>
-      <p class='meta'>30 January 2016 / by Nina Petropoulos</p>
+      <a class='caps post-title' href='/category1/2016/01/29/the-artist-theme.html'>The Artist Theme</a>
+      <p class='meta'>29 January 2016 / by Nina Petropoulos</p>
+    </div>
+  </div>
+
+  <div class="sm-4 imgBack link vertCenter textCenter grow" style='background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ), url(http://localhost:4000/assets/img/food2.jpg)'>
+    <div>
+      <a class='caps post-title' href='/category1/2016/01/24/Need-Excuses.html'>Need Excuses? Try This</a>
+      <p class='meta'>24 January 2016 / by Nina Petropoulos</p>
     </div>
   </div>
 
@@ -52,6 +225,7 @@ A minimal theme Jekyll theme with all the basics you need. Designed by <a>Nina</
     <div>
       <a class='caps post-title' href='/category1/2016/01/29/the-artist-theme.html'>The Artist Theme</a>
       <p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
 </p>
       <p class='meta'>29 January 2016 / by Nina Petropoulos</p>
     </div>
@@ -61,56 +235,9 @@ A minimal theme Jekyll theme with all the basics you need. Designed by <a>Nina</
     <div>
       <a class='caps post-title' href='/category1/2016/01/24/Need-Excuses.html'>Need Excuses? Try This</a>
       <p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
 </p>
       <p class='meta'>24 January 2016 / by Nina Petropoulos</p>
-    </div>
-  </div>
-
-</div>
-
-<div class='flexbox wrap'>
-
-  <div class="sm-4 imgBack link vertCenter textCenter grow" style='background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ), url(http://localhost:3000/assets/img/work1.jpg)'>
-    <div>
-      <a class='caps post-title' href='/category2/2016/01/01/theme-styles.html'>Theme Styles</a>
-      <p class='meta'>01 January 2016 / by Nina Petropoulos</p>
-    </div>
-  </div>
-
-  <div class="sm-4 imgBack link vertCenter textCenter grow" style='background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ), url(http://localhost:3000/assets/img/person1.jpeg)'>
-    <div>
-      <a class='caps post-title' href='/category1/2012/11/09/look-me-up-on-soundcloud.html'>Look Me Up On Soundcloud</a>
-      <p class='meta'>09 November 2012 / by Nina Petropoulos</p>
-    </div>
-  </div>
-
-  <div class="sm-4 imgBack link vertCenter textCenter grow" style='background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ), url(http://localhost:3000/assets/img/food2.jpg)'>
-    <div>
-      <a class='caps post-title' href='/category1/2010/11/11/i-make-music-too.html'>I Make Music Too</a>
-      <p class='meta'>11 November 2010 / by Nina Petropoulos</p>
-    </div>
-  </div>
-
-</div>
-<div class='divider xs-12 grow'></div>
-
-<div class='flexbox'>
-
-  <div class="sm-6 textPreview vertCenter grow short">
-    <div>
-      <a class='caps post-title' href='/category1/2009/12/01/another-post.html'>Another Post</a>
-      <p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut <a href="example.net">enim ad minim</a> veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</p>
-      <p class='meta'>01 December 2009 / by Nina Petropoulos</p>
-    </div>
-  </div>
-
-  <div class="sm-6 textPreview vertCenter grow short">
-    <div>
-      <a class='caps post-title' href='/category1/2008/12/01/another-post-again.html'>Another Post Again</a>
-      <p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut <a href="example.net">enim ad minim</a> veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</p>
-      <p class='meta'>01 December 2008 / by Nina Petropoulos</p>
     </div>
   </div>
 
@@ -120,10 +247,11 @@ A minimal theme Jekyll theme with all the basics you need. Designed by <a>Nina</
     </main>
 
 
-      <footer class="xs-12"><div><strong class="big">Artist Theme</strong><p> 
-A minimal theme Jekyll theme with all the basics you need. Designed by <a>Nina</a>  , and free on <a>Github</a></p></div></footer>
+      <footer class="xs-12 repy"><div><strong class="big">Matheux</strong><p>
+A minimal theme Jekyll . Designed by <a>Nina</a>  , and free on <a>Github</a></p></div></footer>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://localhost:3000/assets/js/function.js"></script>
+    <script src="http://localhost:4000/assets/js/function.js"></script>
   </body>
 </html>
