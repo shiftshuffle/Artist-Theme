@@ -1,5 +1,171 @@
 @import "_vars.sass"
 
+
+
+
+//**
+// * 0. Icons
+ //* Font Awesome by Dave Gandy | http://fontawesome.io
+ //* --------------------------------------------------
+@font-face
+  font-family: 'fontawesome'
+  src: url('../font-awesome-4.7.0/fonts/fontawesome.eot?x9dm57')
+  src: url('../font-awesome-4.7.0/fonts/fontawesome.eot?x9dm57#iefix') format("embedded-opentype"), url('fonts/fontawesome.ttf?x9dm57') format("truetype"), url('fonts/fontawesome.woff?x9dm57') format("woff"), url('fonts/fontawesome.svg?x9dm57#fontawesome') format("svg")
+  font-weight: normal
+  font-style: normal
+
+
+[class^="fa-"], [class*=" fa-"]
+  font-family: 'fontawesome' !important
+  speak: none
+  font-style: normal
+  font-weight: normal
+  font-variant: normal
+  text-transform: none
+  line-height: 1
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+.fa-bag-custom:before
+  content: "\e900"
+
+.fa-search:before
+  content: "\f002"
+
+.fa-heart:before
+  content: "\f004"
+
+.fa-user:before
+  content: "\f007"
+
+.fa-twitter:before
+  content: "\f099"
+
+.fa-facebook:before
+  content: "\f09a"
+
+.fa-facebook-f:before
+  content: "\f09a"
+
+.fa-github:before
+  content: "\f09b"
+
+.fa-feed:before, .fa-rss:before
+  content: "\f09e"
+
+.fa-globe:before
+  content: "\f0ac"
+
+.fa-chain:before, .fa-link:before
+  content: "\f0c1"
+
+.fa-pinterest:before
+  content: "\f0d2"
+
+.fa-google-plus:before
+  content: "\f0d5"
+
+.fa-envelope:before
+  content: "\f0e0"
+
+.fa-linkedin:before
+  content: "\f0e1"
+
+.fa-angle-double-left:before
+  content: "\f100"
+
+.fa-angle-double-right:before
+  content: "\f101"
+
+.fa-angle-double-up:before
+  content: "\f102"
+
+.fa-angle-double-down:before
+  content: "\f103"
+
+.fa-angle-left:before
+  content: "\f104"
+
+.fa-angle-right:before
+  content: "\f105"
+
+.fa-angle-up:before
+  content: "\f106"
+
+.fa-angle-down:before
+  content: "\f107"
+
+.fa-mail-reply:before, .fa-reply:before
+  content: "\f112"
+
+.fa-xing:before
+  content: "\f168"
+
+.fa-youtube-play:before
+  content: "\f16a"
+
+.fa-dropbox:before
+  content: "\f16b"
+
+.fa-stack-overflow:before
+  content: "\f16c"
+
+.fa-instagram:before
+  content: "\f16d"
+
+.fa-flickr:before
+  content: "\f16e"
+
+.fa-tumblr:before
+  content: "\f173"
+
+.fa-dribbble:before
+  content: "\f17d"
+
+.fa-foursquare:before
+  content: "\f180"
+
+.fa-digg:before
+  content: "\f1a6"
+
+.fa-behance:before
+  content: "\f1b4"
+
+.fa-spotify:before
+  content: "\f1bc"
+
+.fa-deviantart:before
+  content: "\f1bd"
+
+.fa-soundcloud:before
+  content: "\f1be"
+
+.fa-vine:before
+  content: "\f1ca"
+
+.fa-codepen:before
+  content: "\f1cb"
+
+.fa-medium:before
+  content: "\f23a"
+
+.fa-500px:before
+  content: "\f26e"
+
+.fa-vimeo:before
+  content: "\f27d"
+
+.fa-reddit-alien:before
+  content: "\f281"
+
+.fa-mixcloud:before
+  content: "\f289"
+
+.fa-etsy:before
+  content: "\f2d7"
+
+
+
 //	Typography
 h1
   font-size: 36px
@@ -43,7 +209,36 @@ a
 
 .imgBack .post-title
   color: white
-  font-size: 36px
+  font-size: 26px
+  font-family: "Libre Baskerville",serif
+  display: block
+  font-weight: 300
+  font-size: 24px
+  line-height: 1.4
+  text-decoration: none
+  // margin-top: 230px
+
+.noimg .post-title
+  color: #212121
+  font-size: 26px
+  font-family: "Libre Baskerville",serif
+  display: block
+  font-weight: 300
+  font-size: 24px
+  line-height: 1.4
+  text-decoration: none
+  text-align: center
+  // margin-top: 230px
+
+
+.post-div
+  margin-top: 212px
+
+
+
+
+
+
 
 // Helper Classes
 .textCenter
@@ -53,11 +248,13 @@ a
 .caps
   text-transform: uppercase
 .small
-  font-size: 12px
+  font-size: 12px !important
+.medium
+  font-size: 17px !important
 .big
-  font-size: 21px
+  font-size: 21px !important
 .thin
-  font-weight: 300
+  font-weight: 300 !important
 .meta
   color: $primary
 .accent
@@ -77,10 +274,13 @@ body
 
 body
   background: $bg-color
-  font-size: 14px
+  font-size: 18px !important
+  max-width: 100%
+  vertical-align: baseline
   line-height: 1.6
-  font-family: $Roboto
-  color: $text-color
+  font-weight: normal !important
+  font-family: $Crimson !important
+  color: $text-color !important
   -webkit-font-smoothing: antialiased
   -webkit-text-size-adjust: 100%
 *
@@ -94,3 +294,963 @@ body
   height: 50px
   padding: 5px 10px
   margin: auto
+
+
+/* Alignments */
+.alignleft
+	float: left
+
+
+.alignright
+	float: right
+
+
+.aligncenter
+	clear: both
+	display: block
+	margin-left: auto
+	margin-right: auto
+
+
+blockquote.alignleft,
+.wp-caption.alignleft,
+img.alignleft
+	margin: 6px 30px 12px 0
+
+
+blockquote.alignright
+.wp-caption.alignright
+img.alignright
+	margin: 6px 0 12px 30px
+
+
+blockquote.aligncenter
+.wp-caption.aligncenter
+img.aligncenter
+	clear: both
+	margin-top: 6px
+	margin-bottom: 24px
+
+
+
+// ######## reset//
+img
+  -ms-interpolation-mode: bicubic
+  border: 0
+  vertical-align: middle
+
+svg:not(:root)
+  overflow: hidden
+
+figure
+  margin: 0
+
+pre
+  overflow: auto
+
+
+code, kbd, pre, samp
+  font-family: monospace, serif
+  font-size: 1em
+
+blockquote, q
+  quotes: none
+
+blockquote
+  &:before, &:after
+    content: ""
+    content: none
+
+q
+  &:before, &:after
+    content: ""
+    content: none
+
+form
+  margin: 0
+
+button, input, optgroup, select, textarea
+  color: inherit
+  font: inherit
+  margin: 0
+
+button
+  overflow: visible
+  text-transform: none
+
+select
+  text-transform: none
+
+button, html input[type="button"]
+  -webkit-appearance: button
+  cursor: pointer
+
+input
+  &[type="reset"], &[type="submit"]
+    -webkit-appearance: button
+    cursor: pointer
+
+button[disabled], html input[disabled]
+  cursor: default
+
+button::-moz-focus-inner
+  border: 0
+  padding: 0
+
+input
+  &::-moz-focus-inner
+    border: 0
+    padding: 0
+  line-height: normal
+  &[type="checkbox"], &[type="radio"]
+    box-sizing: border-box
+    padding: 0
+  &[type="number"]
+    &::-webkit-inner-spin-button, &::-webkit-outer-spin-button
+      height: auto
+  &[type="text"], &[type="email"], &[type="url"], &[type="password"], &[type="search"]
+    -webkit-appearance: none
+
+textarea
+  -webkit-appearance: none
+
+input[type="search"]
+  &::-webkit-search-cancel-button, &::-webkit-search-decoration
+    -webkit-appearance: none
+
+textarea
+  overflow: auto
+
+optgroup
+  font-weight: bold
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+/**
+ //* 2. General
+ //* ----------------------------------------------------------------------------
+
+html, button, input, select, textarea
+  font-family: 'Crimson Text', serif
+
+body
+  background-color: #fff
+  color: #6a6c6f
+  line-height: 1.75
+
+a
+  color: #ff868f
+  text-decoration: none
+  -webkit-transition: color .3s
+  -moz-transition: color .3s
+  transition: color .3s
+  &:hover
+    text-decoration: underline
+
+h1, h2, h3, h4, h5, h6
+  color: #1d1e1f
+  font-family: 'Crimson Text', serif
+  font-weight: normal
+  line-height: 1.25
+  margin: 0 0 24px
+
+h1
+  font-size: 30px
+
+h2
+  font-size: 24px
+
+h3
+  font-size: 21px
+
+h4
+  font-size: 18px
+
+h5, h6
+  font-size: 16px
+
+address
+  font-style: italic
+  margin: 0 0 24px
+
+mark, ins
+  background-color: #eee
+  color: #3a3b3d
+  padding: 0 3px
+  text-decoration: none
+
+p
+  margin: 0 0 24px
+
+pre
+  background-color: #f9f9f9
+  color: #3a3b3d
+  font-size: 14px
+  margin: 0 0 24px
+  padding: 24px 30px
+  white-space: pre
+  white-space: pre-wrap
+  word-wrap: break-word
+
+blockquote
+  border-left: 1px solid #ff868f !important
+  color: #1d1e1f !important
+  font-size: 21px
+  font-style: italic
+  line-height: 1.5
+  margin: 0 0 24px
+  padding: 15px 0 15px 30px
+  position: relative
+  &:before
+    background-color: #fff
+    color: #ff868f
+    content: "\201C"
+    font: bold 36px/1.16667 'PT Sans', sans-serif
+    height: 30px
+    left: -15px
+    position: absolute
+    text-align: center
+    top: 15px
+    width: 30px
+  cite, small
+    color: #b6b6b6
+    display: block
+    font: 12px/1.5 'PT Sans', sans-serif
+    letter-spacing: 1px
+    margin-top: 12px
+    text-transform: uppercase
+  p
+    margin-bottom: 12px
+    &:last-child
+      margin-bottom: 0
+
+dl, dd
+  margin: 0 0 24px
+
+dt
+  font-weight: bold
+
+ul, ol
+  margin: 0 0 24px
+  padding: 0 0 0 30px
+
+ul
+  list-style: circle
+
+ol
+  list-style: decimal
+
+li >
+  ul, ol
+    margin-bottom: 0
+
+table
+  border-bottom: 1px solid #eee
+  line-height: 1.5
+  margin: 0 0 24px
+  text-align: left
+  width: 100%
+
+caption
+  color: #b6b6b6
+  font: italic 14px/1.5 'PT Sans', sans-serif
+  text-align: left
+  margin-bottom: 12px
+
+th, td
+  border-top: 1px solid #eee
+  padding: 0.5em 10px
+
+th
+  color: #3a3b3d
+  font-weight: bold
+
+hr
+  background-color: #eee
+  border: 0
+  height: 1px
+  margin: 24px 0
+
+/* Form fields
+
+form p
+  margin-bottom: 15px
+
+label
+  color: #3a3b3d
+  font: 12px/1.5 'PT Sans', sans-serif
+  letter-spacing: 1px
+  text-transform: uppercase
+
+fieldset
+  border: 1px solid #eee
+  margin: 0 0 15px
+  padding: 15px
+
+legend
+  color: #b6b6b6
+  display: block
+  font: italic 14px/1.5 'PT Sans', sans-serif
+  padding: 0 5px
+
+button, input, select, textarea
+  background-color: #fff
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  border: 1px solid #eee
+  color: #3a3b3d
+  font-size: 16px
+  font-weight: normal
+  line-height: 1.5
+  max-width: 100%
+  padding: 6px 10px
+  vertical-align: baseline
+
+input
+  &[type="text"]:focus, &[type="email"]:focus, &[type="url"]:focus, &[type="password"]:focus, &[type="search"]:focus
+    outline: 0
+
+textarea:focus
+  outline: 0
+
+button
+  background-color: #ff868f
+  border-color: #ff868f
+  color: #fff
+  font-family: 'PT Sans', sans-serif
+  font-size: 12px
+  padding: 0.75em 20px
+  letter-spacing: 1px
+  text-transform: uppercase
+  -webkit-transition: .3s
+  -moz-transition: .3s
+  transition: .3s
+
+input
+  &[type="submit"], &[type="button"], &[type="reset"]
+    background-color: #ff868f
+    border-color: #ff868f
+    color: #fff
+    font-family: 'PT Sans', sans-serif
+    font-size: 12px
+    padding: 0.75em 20px
+    letter-spacing: 1px
+    text-transform: uppercase
+    -webkit-transition: .3s
+    -moz-transition: .3s
+    transition: .3s
+
+button
+  &:hover, &:focus
+    background-color: transparent
+    border-color: #ff868f
+    color: #ff868f
+    outline: 0
+
+input
+  &[type="submit"]
+    &:hover, &:focus
+      background-color: transparent
+      border-color: #ff868f
+      color: #ff868f
+      outline: 0
+  &[type="button"]
+    &:hover, &:focus
+      background-color: transparent
+      border-color: #ff868f
+      color: #ff868f
+      outline: 0
+  &[type="reset"]
+    &:hover, &:focus
+      background-color: transparent
+      border-color: #ff868f
+      color: #ff868f
+      outline: 0
+
+button:active
+  background-color: transparent
+  border-color: #ff868f
+  color: #ff868f
+  outline: 0
+
+input
+  &[type="button"]:active, &[type="reset"]:active, &[type="submit"]:active
+    background-color: transparent
+    border-color: #ff868f
+    color: #ff868f
+    outline: 0
+
+.post-password-form input[type="password"]
+  display: block
+  margin-bottom: 15px
+  max-width: 500px
+  width: 100%
+
+/* Placeholder text color
+
+\::-webkit-input-placeholder, :-moz-placeholder
+  color: #b6b6b6
+
+\::-moz-placeholder
+  color: #b6b6b6
+  opacity: 1
+
+\:-ms-input-placeholder
+  color: #b6b6b6
+
+/* Videos, audios and embeds
+
+embed, iframe, object, video
+  max-width: 100%
+
+.fluid-width-video-wrapper, .mejs-container
+  margin: 0 0 24px
+
+.post-video .fluid-width-video-wrapper
+  margin-bottom: 0
+
+/* Images
+
+img
+  height: auto
+  max-width: 100%
+
+/* Alignments
+
+.alignleft
+  float: left
+
+.alignright
+  float: right
+
+.aligncenter
+  clear: both
+  display: block
+  margin-left: auto
+  margin-right: auto
+
+blockquote.alignleft, .wp-caption.alignleft, img.alignleft
+  margin: 6px 30px 12px 0
+
+blockquote.alignright, .wp-caption.alignright, img.alignright
+  margin: 6px 0 12px 30px
+
+blockquote.aligncenter, .wp-caption.aligncenter, img.aligncenter
+  clear: both
+  margin-top: 6px
+  margin-bottom: 24px
+
+/* Captions
+
+.wp-caption
+  margin-bottom: 24px
+  max-width: 100%
+  img[class*="wp-image-"]
+    display: block
+    margin: 0
+
+.wp-caption-text, .entry-attachment .entry-caption
+  color: #b6b6b6
+  font: italic 14px/1.5 'PT Sans', sans-serif
+  padding-top: 12px
+
+.wp-caption .wp-caption-text
+  padding-bottom: 12px
+  position: relative
+  &:before
+    background-color: #eee
+    bottom: 0
+    content: ""
+    height: 1px
+    left: 0
+    position: absolute
+    width: 80px
+
+/* Galleries
+
+.gallery
+  margin: 0 -6px 24px
+
+.gallery-item
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  display: inline-block
+  padding: 6px
+  text-align: left
+  vertical-align: top
+  width: 100%
+
+.gallery-columns-2 .gallery-item
+  max-width: 50%
+
+.gallery-columns-3 .gallery-item
+  max-width: 33.33%
+
+.gallery-columns-4 .gallery-item
+  max-width: 25%
+
+.gallery-columns-5 .gallery-item
+  max-width: 20%
+
+.gallery-columns-6 .gallery-item
+  max-width: 16.66%
+
+.gallery-columns-7 .gallery-item
+  max-width: 14.28%
+
+.gallery-columns-8 .gallery-item
+  max-width: 12.5%
+
+.gallery-columns-9 .gallery-item
+  max-width: 11.11%
+
+.gallery-columns-6 .gallery-caption, .gallery-columns-7 .gallery-caption, .gallery-columns-8 .gallery-caption, .gallery-columns-9 .gallery-caption
+  display: none
+
+/* Text meant only for screen readers
+
+.screen-reader-text, .site-search .search-submit, .says, .widget_mc4wp_form_widget label
+  border: 0 none
+  clip: rect(1px, 1px, 1px, 1px)
+  height: 1px
+  overflow: hidden
+  padding: 0
+  position: absolute !important
+  width: 1px
+
+/* Grid
+
+.grid
+  margin-left: -30px
+
+.one-half, .one-third, .one-fourth
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  float: left
+  padding-left: 30px
+
+.one-half
+  width: 50%
+
+.one-third
+  width: 33.333%
+
+.one-fourth
+  width: 25%
+
+/* Clearing floats
+
+.inner:after, .grid:after, .menu-container:after, .entry-content:after, .entry-footer:after, .page-content:after, .nav-links:after
+  clear: both
+
+.inner
+  &:before, &:after
+    content: ""
+    display: table
+
+.grid
+  &:before, &:after
+    content: ""
+    display: table
+
+.menu-container
+  &:before, &:after
+    content: ""
+    display: table
+
+.entry-content
+  &:before, &:after
+    content: ""
+    display: table
+
+.entry-footer
+  &:before, &:after
+    content: ""
+    display: table
+
+.page-content
+  &:before, &:after
+    content: ""
+    display: table
+
+.nav-links
+  &:before, &:after
+    content: ""
+    display: table
+
+/* Icons
+
+.search-show:before, .site-search .search-form:before
+  font-family: 'fontawesome' !important
+  font-size: 14px
+  font-style: normal
+  font-variant: normal
+  font-weight: normal
+  line-height: 1
+  speak: none
+  text-transform: none
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+.primary-menu
+  .menu-item-has-children > a:after, .page_item_has_children > a:after
+    font-family: 'fontawesome' !important
+    font-size: 14px
+    font-style: normal
+    font-variant: normal
+    font-weight: normal
+    line-height: 1
+    speak: none
+    text-transform: none
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+
+.social-links-menu a:before, .entry-footer .meta-before:before, .more-link:after, .comment-reply-link:before, .comment-form-author:before, .comment-form-email:before, .comment-form-url:before, .slick-arrow:before, .dropdown-toggle:before
+  font-family: 'fontawesome' !important
+  font-size: 14px
+  font-style: normal
+  font-variant: normal
+  font-weight: normal
+  line-height: 1
+  speak: none
+  text-transform: none
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+.social-links-menu a
+  &[href*="500px.com"]:before
+    content: "\f26e"
+  &[href*="behance.net"]:before
+    content: "\f1b4"
+  &[href*="bloglovin.com"]:before
+    content: "\f004"
+  &[href*="codepen.io"]:before
+    content: "\f1cb"
+  &[href*="deviantart.com"]:before
+    content: "\f1bd"
+  &[href*="digg.com"]:before
+    content: "\f1a6"
+  &[href*="dribbble.com"]:before
+    content: "\f17d"
+  &[href*="dropbox.com"]:before
+    content: "\f16b"
+  &[href*="etsy.com"]:before
+    content: "\f2d7"
+  &[href*="facebook.com"]:before
+    content: "\f09a"
+  &[href*="flickr.com"]:before
+    content: "\f16e"
+  &[href*="foursquare.com"]:before
+    content: "\f180"
+  &[href*="github.com"]:before
+    content: "\f09b"
+  &[href*="plus.google.com"]:before
+    content: "\f0d5"
+  &[href*="instagram.com"]:before
+    content: "\f16d"
+  &[href*="linkedin.com"]:before
+    content: "\f0e1"
+  &[href*="medium.com"]:before
+    content: "\f23a"
+  &[href*="mixcloud.com"]:before
+    content: "\f289"
+  &[href*="pinterest.com"]:before
+    content: "\f0d2"
+  &[href*="reddit.com"]:before
+    content: "\f281"
+  &[href*="soundcloud.com"]:before
+    content: "\f1be"
+  &[href*="spotify.com"]:before
+    content: "\f1bc"
+  &[href*="stackoverflow.com"]:before
+    content: "\f16c"
+  &[href*="stackexchange.com"]:before
+    content: "\f18d"
+  &[href*="tumblr.com"]:before
+    content: "\f173"
+  &[href*="twitter.com"]:before
+    content: "\f099"
+  &[href*="vimeo.com"]:before
+    content: "\f27d"
+  &[href*="vine.co"]:before
+    content: "\f1ca"
+  &[href*="xing.com"]:before
+    content: "\f168"
+  &[href*="youtube.com"]:before
+    content: "\f16a"
+  &[href^="mailto:"]:before
+    content: "\f0e0"
+  &[href$="/feed/"]:before
+    content: "\f09e"
+
+/* Buttons
+
+.button, .more-link
+  background-color: transparent
+  border: 1px solid #ff868f
+  color: #ff868f
+  display: inline-block
+  font: 12px/1.5 'PT Sans', sans-serif
+  letter-spacing: 1px
+  padding: 5px 15px
+  text-align: center
+  text-transform: uppercase
+  -webkit-transition: .3s
+  -moz-transition: .3s
+  transition: .3s
+
+.button:hover
+  background-color: #ff868f
+  color: #fff
+  text-decoration: none
+
+.more-link
+  &:hover
+    background-color: #ff868f
+    color: #fff
+    text-decoration: none
+  &:after
+    content: "\f101"
+    font-size: 12px
+    padding-left: 5px
+    position: relative
+
+/* Intro text
+
+.intro
+  color: #1d1e1f
+  font-size: 18px
+  line-height: 1.66667
+  margin-bottom: 30px
+
+/* Columns
+
+.twocolumn
+  -webkit-column-count: 2
+  -moz-column-count: 2
+  column-count: 2
+  -webkit-column-gap: 30px
+  -moz-column-gap: 30px
+  column-gap: 30px
+
+
+
+
+
+
+
+// ################## first css
+
+/*##################################
+ //*logos
+ //*##################################
+
+#logo-container
+  display: inline-block
+  background-image: url(../img/shiftmatheux.png)
+  /*opacity: 0.5;
+   /*filter: alpha(opacity=50);
+  background-repeat: no-repeat
+  padding-bottom: 20px
+  width: 200px
+  height: 10px
+  margin: auto
+  top: 0
+  right: 0
+  bottom: 0
+  left: -30px
+  /*position: absolute;
+  /*left: 50%;
+   /*top: 10px;
+  /*margin-left: 20rem;
+  background-size: contain
+  /*background-position: 0 0;
+  float: right
+  right: -50%
+  position: relative
+  /*margin: 0 auto;
+  /*max-width: 1280px;
+  /*width: 97%;
+  /*top:-12rem;
+
+#logo-container2
+  display: inline-block
+  background-image: url(../img/js.png)
+  /*opacity: 0.5;
+   /*filter: alpha(opacity=50);
+  background-repeat: no-repeat
+  padding-bottom: 7%
+  /*padding-top: 2%;
+  width: 30px
+  height: 10px
+  background-size: contain
+  background-position: 0px 0px
+  /*padding: 2rem 2rem;
+
+nav .brand-logo2
+  position: absolute
+  /*float: left;
+  color: black
+  display: inline-block
+  /*font-size: 2.1rem;
+  padding: 0
+  white-space: nowrap
+  /*width: 60px;
+  left: -3em
+  /*padding: 2rem 2rem;
+
+@media only screen and (max-width: 992px)
+  nav .logo-container2
+    left: 2.5em
+    -webkit-transform: translateX(-50%)
+    transform: translateX(-50%)
+
+.logo-container2
+  margin: 0 auto
+  max-width: 1280px
+  width: 97%
+  top: -12rem
+
+@media only screen and (min-width: 601px)
+  .logo-container2
+    width: 85%
+    top: -4rem
+
+@media only screen and (min-width: 993px)
+  .logo-container2
+    width: 85%
+    top: -1rem
+
+.container2 .row
+  margin-left: -0.75rem
+  margin-right: -0.75rem
+
+/*##############################
+/*navbar bootstrap
+/*##############################
+
+@media (min-width: 768px)
+  .navbar-nav > li
+    float: none !important
+
+.panel-default
+  border-color: #212121 !important
+
+.panel
+  background-color: #212121 !important
+
+.nav > li > a
+  &:focus, &:hover
+    text-decoration: underline
+    background-color: #212121 !important
+  &:focus, &:hover
+    text-decoration: underline !important
+
+.post-title
+  color: rgba(19, 42, 112, 0.44)
+
+.repy::before
+  background: repeat-y url(../img/topography.jpg)
+  /*background-repeat: repeat-y !important;
+  content: ""
+  /*width:100px;
+   /*height:100px;
+  position: absolute
+  z-index: -1
+  /*top: 0;
+   /*bottom: 0;
+   /*left: 0;
+   /*right: 0;
+  /*background-size: 100%;
+  opacity: 0.1
+  /*filter:alpha(opacity=10);
+  /*height:inherit;
+  width: 97%
+  height: 100%
+  /*background-size: contain;
+  background-size: 100% auto
+  /*      -webkit-background-size: cover;
+   /* -moz-background-size: cover;
+   /* -o-background-size: cover;
+   /* background-size: cover;
+
+
+
+
+
+
+
+
+.textPreview
+  padding: 50px 10px 50px 10px !important
+  min-height: 400px !important
+
+
+
+/**
+ /* 3. Structure
+ /* --------------------------------------------------
+
+.main-navigation, .site-search, .site-header, .default-slider .featured-posts, .site-content, .footer-columns, .footer-fullwidth .widget, .footer-links, .site-info
+  padding-left: 4%
+  padding-right: 4%
+
+.inner
+  margin-left: auto
+  margin-right: auto
+  max-width: 1140px
+
+.content-area
+  float: left
+  margin-bottom: 3.5%
+  margin-right: 40px
+  margin-top: 5%
+  width: 67.5%
+
+.left-sidebar .content-area
+  float: right
+  margin-left: 40px
+  margin-right: 0
+
+.content-sidebar
+  clear: none
+  float: none
+  margin-bottom: 5%
+  margin-top: 5%
+  overflow: hidden
+  width: auto
+  .widget-area
+    border: 1px solid #eee
+    padding: 30px 30px 0
+
+.no-sidebar .content-area, .post-template-no-sidebar .content-area, .page-template-no-sidebar .content-area, .page-template-full-width .content-area, .error404 .content-area
+  float: none
+  margin-bottom: 7.5%
+  margin-left: auto
+  margin-right: auto
+  max-width: 770px
+  width: auto
+
+.no-sidebar.grid-layout .content-area, .page-template-full-width .content-area
+  max-width: 1140px
+
+.special-title h2::after
+  content: ""
+  width: 66%
+  margin: 0 auto
+  height: 2px
+  background: #F9CE06
+  display: block
+
+.special-title h3::after
+  content: ""
+  width: 66%
+  margin: 0 auto
+  height: 2px
+  background: #F9CE06
+  display: block

@@ -1,61 +1,86 @@
 ---
 layout: default
-title: M A T H E U X
+title: Home
 ---
 
 {% for post in site.posts limit:1 %}
+<a href="{{site.baseurl}}{{ post.url }}">
 <div class="xs-12 imgBack link textCenter vertCenter grow tall" style='background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ), url({{ site.url }}/assets/img/{{ post.thumbnail }})'>
   <div>
-    <a class='caps post-title' href='{{site.baseurl}}{{ post.url }}'>{{ post.title }}</a>
+    <a class='caps post-title' href='{{site.baseurl}}{{ post.url }}'><div class="special-title">
+      <h3>{{ page.title }}</h3>
+    </div>
+  </a>
     <p class='meta'>{{ post.date | date_to_long_string }} / by {{ post.author }}</p>
   </div>
 </div>
+</a>
 {% endfor %}
 
 <div class='flexbox wrap'>
 {% for post in site.posts limit:1 offset:1 %}
+<a href="{{site.baseurl}}{{ post.url }}">
   <div class="sm-6 imgBack link vertCenter textCenter grow short" style='background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ), url({{ site.url }}/assets/img/{{ post.thumbnail }})'>
     <div>
-      <a class='caps post-title' href='{{site.baseurl}}{{ post.url }}'>{{ post.title }}</a>
+      <a class='caps post-title' href='{{site.baseurl}}{{ post.url }}'><div class="special-title">
+        <h3>{{ post.title }}</h3>
+      </div>
+    </a>
       <p class='meta'>{{ post.date | date_to_long_string }} / by {{ post.author }}</p>
     </div>
   </div>
+</a>
 {% endfor %}
 </div>
 <div class='divider xs-12 grow'></div>
 
 <div class='flexbox'>
 {% for post in site.posts limit:1 offset:3 %}
-  <div class="sm-6 textPreview vertCenter grow short">
+<a href="{{site.baseurl}}{{ post.url }}">
+  <div class="sm-6 textPreview vertCenter grow short noimg">
     <div>
-      <a class='caps post-title' href='{{site.baseurl}}{{ post.url }}'>{{ post.title }}</a>
+      <a class='caps post-title' href='{{site.baseurl}}{{ post.url }}'><div class="special-title">
+        <h3>{{ post.title }}</h3>
+      </div>
+    </a>
       <p>{{ post.excerpt }}</p>
       <p class='meta'>{{ post.date | date_to_long_string }} / by {{ post.author }}</p>
     </div>
   </div>
+</a>
 {% endfor %}
 </div>
 
 <div class='flexbox wrap'>
 {% for post in site.posts limit:2 offset:5 %}
+<a href="{{site.baseurl}}{{ post.url }}">
   <div class="sm-4 imgBack link vertCenter textCenter grow" style='background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ), url({{ site.url }}/assets/img/{{ post.thumbnail }})'>
     <div>
-      <a class='caps post-title' href='{{site.baseurl}}{{ post.url }}'>{{ post.title }}</a>
+      <a class='caps post-title' href='{{site.baseurl}}{{ post.url }}'><div class="special-title">
+        <h3>{{ post.title }}</h3>
+      </div>
+    </a>
       <p class='meta'>{{ post.date | date_to_long_string }} / by {{ post.author }}</p>
     </div>
   </div>
+</a>
 {% endfor %}
 </div>
 <div class='divider xs-12 grow'></div>
 
 <div class='flexbox'>
 {% for post in site.posts limit:2 offset:5 %}
-  <div class="sm-6 textPreview vertCenter grow short">
+<a href="{{site.baseurl}}{{ post.url }}">
+  <div class="sm-6 textPreview vertCenter grow short noimg">
     <div>
-      <a class='caps post-title' href='{{site.baseurl}}{{ post.url }}'>{{ post.title }}</a>
+      <a class='caps post-title' href='{{site.baseurl}}{{ post.url }}'><div class="special-title">
+        <h3>{{ post.title }}</h3>
+      </div>
+    </a>
       <p>{{ post.excerpt }}</p>
       <p class='meta'>{{ post.date | date_to_long_string }} / by {{ post.author }}</p>
     </div>
   </div>
+</a>
 {% endfor %}
 </div>
