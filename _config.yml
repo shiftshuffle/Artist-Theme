@@ -12,6 +12,9 @@ description: A small and simple site I made to test out Jekyll.
 baseurl: "/jblog"
 url: "https://shiftshuffle.github.io/jblog"
 
+# baseurl: ""
+# url: ""
+
  # baseurl the subpath of your site, e.g. /blog
 
 # url Where can people find your site?
