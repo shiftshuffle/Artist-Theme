@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "You Need Ten Posts"
+title:  "Cerbere"
 date:   2017-03-03 09:11:03
 description: Phasellus hendrerit. Pellent aliquet nibh nec urna. In nis aliquet vel, dapibus id,mattis.
-thumbnail: food1.jpg
-categories: crypto
+thumbnail: ama-dablam-nepal-mountains-hd-wallpaper.jpg
+categories: [pydefis,challenge,math,code]
 
 # Information for the author block
 author: shiftshuffle
@@ -12,7 +12,74 @@ author: shiftshuffle
 
 
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut [enim ad minim][link1] veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+# de Bruijn Challenge
+
+
+For his 12th and last work, Eurysthee tried to get rid of Hercules by asking him to get Cerbere, the three headed gatekeeper from hell.
+
+Hercules had to first navigate through the styx and get to Hades trone, guarded by Cerbere.
+
+Hades was rather helpful and proposed Hercules go meet Cerbere if he could control him with his bare hands.
+
+Contrary to what is commonly told, Hercules doesn't use violence, and didn't hit Cerbere with a giant bat.
+He used a more subtle tecnhique revelaed by Athena herself.
+He explained him that two from the three heads from Cerbere where eager for mathematics, and the thirds didn't have but a little discernment.
+
+
+
+Here are rings from 5 different colors: Red, Green, Blue, Yellow and Black. We will say from now on R (rouge), V (vert), B (bleu), J (jaune) and N (noir).
+
+Make a necklace for Cerbere s head without judgement such that no matter which sequence of three colors is present in the necklace as consecutive rings.
+
+Tell Cerbere that is a gift and give him the necklace and tell him you have made him that necklace having all sequences of three colors among five. And that this necklace is the shortest having that property.
+
+His malicious heads will not withstand the urge to check this.
+
+One head will count and recount the rings to see if you haven't missed any while the other will try to make a shorter necklace having the same property.
+The last one will have to contemplate smiling dumbly.
+
+Grab Cerbere while is occupied thinking, he will not offer any difficulty.
+
+But careful, if you make a mistake and there isn't a sequence or the necklace isn't the shortest having that property and Cerbere will notice and eat you without mercy.
+
+# Challenge
+To help Hercules, give him the list of rings to make such a necklace.
+The necklace will be a simple string having the colors initials: `RJJBRJB...`
+
+# Test your code
+Imagine there is only 2 colors and we make a necklace having all three sequences, it must have the sequences: `RRR, RRB, RBR, RBB, BRR, BRB, BBR, BBB.`
+
+Sure thing if we put them together side by side we make a necklace having them all, but this will not be the shortest (it will have length 24).
+On the contrary the following necklace
+
+![IMG](https://callicode.fr/pydefis/static/hercule_cerbere.png)
+
+Have all sequences and has only 8 rings and we cannot make it shorter.
+
+For answering the challenge with 2 colors and triplets it is sufficient to give the string of rings: `RBRBBBRR`
+
+
+<div class="alert alert-info">
+  Translated <a href=""> Shift Shuffle </a>
+  <br>
+  Original <a href="https://callicode.fr/pydefis/Hercule12Cerbere/txt"> Here </a>
+</div>
+
+--------------------------------------------
+
+
+
+
+
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_x4IVlsw_q4" frameborder="0" allowfullscreen></iframe>
+
+
+
+
+-----------------------------------------
+
 
 
 <div tabindex="-1" id="notebook" class="border-box-sizing">

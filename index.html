@@ -2,8 +2,9 @@
 layout: default
 title: M A T H E U X
 ---
+{% assign featured = site.posts | where:"title", "Riemann Zeta Function" %}
 
-{% for post in site.posts limit:1 %}
+{% for post in featured %}
 <a href="{{site.baseurl}}{{ post.url }}">
 <div class="xs-12 imgBack link textCenter vertCenter grow tall" style='background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ), url({{ site.url }}/assets/img/{{ post.thumbnail }})'>
   <div>
@@ -52,7 +53,7 @@ title: M A T H E U X
 </div>
 
 <div class='flexbox wrap'>
-{% for post in site.posts limit:2 offset:5 %}
+{% for post in site.posts limit:1 offset:5 %}
 <a href="{{site.baseurl}}{{ post.url }}">
   <div class="sm-4 imgBack link vertCenter textCenter grow" style='background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ), url({{ site.url }}/assets/img/{{ post.thumbnail }})'>
     <div>
@@ -69,7 +70,7 @@ title: M A T H E U X
 <div class='divider xs-12 grow'></div>
 
 <div class='flexbox'>
-{% for post in site.posts limit:2 offset:5 %}
+{% for post in site.posts limit:1 offset:6 %}
 <a href="{{site.baseurl}}{{ post.url }}">
   <div class="sm-6 textPreview vertCenter grow short noimg">
     <div>

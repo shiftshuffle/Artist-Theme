@@ -66,6 +66,13 @@ extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
 <!-- http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML -->
 <!-- https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML -->
 
+<!-- 1. Link to jQuery (1.8 or later), -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- 33 KB -->
+
+<!-- fotorama.css & fotorama.js. -->
+<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+
   </head>
   <body>
 
@@ -94,20 +101,23 @@ extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
                 <div id="dropdown-lvl1" class="panel-collapse collapse">
                     <div class="panel-body">
                         <ul class="nav navbar-nav">
-                            <li><a href="http://localhost:4000/categories/category1.html">Category1</a></li>
+
                             <li><a href="http://localhost:4000/categories/diary.html">Diary</a></li>
                             <li><a href="http://localhost:4000/categories/math.html">Math</a></li>
+                            <li><a href="http://localhost:4000/categories/code.html">Code</a></li>
+                            <li><a href="http://localhost:4000/categories/art.html">Art</a></li>
 
                             <!-- Dropdown level 2 -->
                                 <a data-toggle="collapse" href="#dropdown-lvl2">
-                                    <span class="glyphicon glyphicon-off"></span> Sub Level <span class="caret"></span>
+                                    <span class="glyphicon glyphicon-bookmark"></span> SubC(math) <span class="caret"></span>
                                 </a>
                                 <div id="dropdown-lvl2" class="panel-collapse collapse">
                                     <div class="panel-body">
                                         <ul class="nav navbar-nav">
-                                            <li><a href="#">Link</a></li>
-                                            <li><a href="#">Link</a></li>
-                                            <li><a href="#">Link</a></li>
+                                          <li><a href="http://localhost:4000/categories/math.html">Number Theory</a></li>
+                                          <li><a href="http://localhost:4000/categories/math.html">Art</a></li>
+                                          <li><a href="http://localhost:4000/categories/math.html">Art</a></li>
+
                                         </ul>
                                     </div>
                                 </div>
@@ -124,7 +134,7 @@ extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
 
 
                 <a data-toggle="collapse" href="#dropdown-lvl3">
-                    <span class="glyphicon glyphicon-calendar"></span> Month <span class="caret"></span>
+                    <span class="glyphicon glyphicon-calendar"></span> Year <span class="caret"></span>
                 </a>
 
                 <!-- Dropdown level 3 -->
@@ -137,7 +147,7 @@ extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
 
                             <!-- Dropdown level 4 -->
                                 <a data-toggle="collapse" href="#dropdown-lvl4">
-                                    <span class="glyphicon glyphicon-bookmark"></span> Sub Level <span class="caret"></span>
+                                    <span class="glyphicon glyphicon-bookmark"></span> Month <span class="caret"></span>
                                 </a>
                                 <div id="dropdown-lvl4" class="panel-collapse collapse">
                                     <div class="panel-body">
@@ -166,14 +176,16 @@ extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
       <i class='toggle-button'><span class='bar'></span><span class='bar'></span><span class='bar'></span></i>
       <div class='content-wrap'>
         
-<a href="/jblog/crypto/2017/03/03/you-need-ten-posts.html">
-<div class="xs-12 imgBack link textCenter vertCenter grow tall" style='background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ), url(http://localhost:4000/assets/img/food1.jpg)'>
+
+
+<a href="/jblog/math/number-theory/2016/11/11/riemann-zeta-function.html">
+<div class="xs-12 imgBack link textCenter vertCenter grow tall" style='background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ), url(http://localhost:4000/assets/img/my-cathedral-by-philippe-clairo-navajo-nation-parks-2560x1600.jpg)'>
   <div>
-    <a class='caps post-title' href='/jblog/crypto/2017/03/03/you-need-ten-posts.html'><div class="special-title">
+    <a class='caps post-title' href='/jblog/math/number-theory/2016/11/11/riemann-zeta-function.html'><div class="special-title">
       <h3>M A T H E U X</h3>
     </div>
   </a>
-    <p class='meta'>03 March 2017 / by shiftshuffle</p>
+    <p class='meta'>11 November 2016 / by Shift Shuffle</p>
   </div>
 </div>
 </a>
@@ -181,14 +193,14 @@ extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
 
 <div class='flexbox wrap'>
 
-<a href="/jblog/category1/crypto/math/number-theory/2016/11/11/riemann-zeta-function.html">
-  <div class="sm-6 imgBack link vertCenter textCenter grow short" style='background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ), url(http://localhost:4000/assets/img/my-cathedral-by-philippe-clairo-navajo-nation-parks-2560x1600.jpg)'>
+<a href="/jblog/code/2017/03/03/dna.html">
+  <div class="sm-6 imgBack link vertCenter textCenter grow short" style='background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ), url(http://localhost:4000/assets/img/20110202-mimi-protein.jpg)'>
     <div>
-      <a class='caps post-title' href='/jblog/category1/crypto/math/number-theory/2016/11/11/riemann-zeta-function.html'><div class="special-title">
-        <h3>Riemann Zeta Function</h3>
+      <a class='caps post-title' href='/jblog/code/2017/03/03/dna.html'><div class="special-title">
+        <h3>Genetic Algorithm</h3>
       </div>
     </a>
-      <p class='meta'>11 November 2016 / by Shift Shuffle</p>
+      <p class='meta'>03 March 2017 / by Shift Shuffle</p>
     </div>
   </div>
 </a>
@@ -198,17 +210,17 @@ extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
 
 <div class='flexbox'>
 
-<a href="/jblog/category2/2016/01/30/basic-use.html">
+<a href="/jblog/math/analytic/combinatoric/2017/03/03/bernoulli.html">
   <div class="sm-6 textPreview vertCenter grow short noimg">
     <div>
-      <a class='caps post-title' href='/jblog/category2/2016/01/30/basic-use.html'><div class="special-title">
-        <h3>Basic Use: A Guide</h3>
+      <a class='caps post-title' href='/jblog/math/analytic/combinatoric/2017/03/03/bernoulli.html'><div class="special-title">
+        <h3>Bernoulli Numbers</h3>
       </div>
     </a>
-      <p><p>If this is your first time using Jekyll, don’t be scared! Installing and setting up this particular theme is very, very simple. I’ll walk you through it.</p>
+      <p><p>Bernoulli numbers are defined as de coefficients  $B(n) $ when expanding</p>
 
 </p>
-      <p class='meta'>30 January 2016 / by Nina Petropoulos</p>
+      <p class='meta'>03 March 2017 / by Shift Shuffle</p>
     </div>
   </div>
 </a>
@@ -217,26 +229,14 @@ extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
 
 <div class='flexbox wrap'>
 
-<a href="/jblog/category1/2016/01/24/Need-Excuses.html">
-  <div class="sm-4 imgBack link vertCenter textCenter grow" style='background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ), url(http://localhost:4000/assets/img/food2.jpg)'>
+<a href="/jblog/diary/art/lecture/2016/07/07/travelers.html">
+  <div class="sm-4 imgBack link vertCenter textCenter grow" style='background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ), url(http://localhost:4000/assets/img/potala-palace-1920.jpg)'>
     <div>
-      <a class='caps post-title' href='/jblog/category1/2016/01/24/Need-Excuses.html'><div class="special-title">
-        <h3>Need Excuses? Try This</h3>
+      <a class='caps post-title' href='/jblog/diary/art/lecture/2016/07/07/travelers.html'><div class="special-title">
+        <h3>Travelers</h3>
       </div>
     </a>
-      <p class='meta'>24 January 2016 / by Nina Petropoulos</p>
-    </div>
-  </div>
-</a>
-
-<a href="/jblog/category2/2016/01/01/theme-styles.html">
-  <div class="sm-4 imgBack link vertCenter textCenter grow" style='background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ), url(http://localhost:4000/assets/img/work1.jpg)'>
-    <div>
-      <a class='caps post-title' href='/jblog/category2/2016/01/01/theme-styles.html'><div class="special-title">
-        <h3>Theme Styles</h3>
-      </div>
-    </a>
-      <p class='meta'>01 January 2016 / by Nina Petropoulos</p>
+      <p class='meta'>07 July 2016 / by Shift Shuffle</p>
     </div>
   </div>
 </a>
@@ -246,32 +246,17 @@ extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
 
 <div class='flexbox'>
 
-<a href="/jblog/category1/2016/01/24/Need-Excuses.html">
+<a href="/jblog/art/poems/2016/06/20/secret-doctrine.html">
   <div class="sm-6 textPreview vertCenter grow short noimg">
     <div>
-      <a class='caps post-title' href='/jblog/category1/2016/01/24/Need-Excuses.html'><div class="special-title">
-        <h3>Need Excuses? Try This</h3>
+      <a class='caps post-title' href='/jblog/art/poems/2016/06/20/secret-doctrine.html'><div class="special-title">
+        <h3>The Secret Doctrine</h3>
       </div>
     </a>
-      <p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p><h1 id="book-of-dzyan">Book of Dzyan</h1>
 
 </p>
-      <p class='meta'>24 January 2016 / by Nina Petropoulos</p>
-    </div>
-  </div>
-</a>
-
-<a href="/jblog/category2/2016/01/01/theme-styles.html">
-  <div class="sm-6 textPreview vertCenter grow short noimg">
-    <div>
-      <a class='caps post-title' href='/jblog/category2/2016/01/01/theme-styles.html'><div class="special-title">
-        <h3>Theme Styles</h3>
-      </div>
-    </a>
-      <p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-</p>
-      <p class='meta'>01 January 2016 / by Nina Petropoulos</p>
+      <p class='meta'>20 June 2016 / by Shift Shuffle</p>
     </div>
   </div>
 </a>
