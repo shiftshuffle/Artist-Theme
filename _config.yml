@@ -7,7 +7,7 @@ exclude: ["node_modules", "gulpfile.js", "package.json"]
 # Jekyll Defaults
 title: M A T H E U X
 email: gauss27@ciencias.unam.mx
-description: A small and simple site I made to test out Jekyll.
+description: Test blog for Diary, Math & Code. Regards, ShiftShuffle
 
 baseurl: "/jblog"
 url: "https://shiftshuffle.github.io/jblog"
