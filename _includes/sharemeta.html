@@ -1,0 +1,51 @@
+
+    <!-- facebook Open Graph Metadatas -->
+    <meta content="your_facebook_app_id" property="fb:app_id">
+    <meta content="{{ site.title }}" property="og:site_name">
+
+    {% if page.title %}
+      <meta content="{{ page.title }}" property="og:title">
+    {% else %}
+      <meta content="{{ site.title }}" property="og:title">
+    {% endif %}
+    {% if page.title %}
+      <meta content="article" property="og:type">
+    {% else %}
+      <meta content="website" property="og:type">
+    {% endif %}
+    {% if page.description %}
+      <meta content="{{ page.description }}" property="og:description">
+    {% else %}
+      <meta content="{{ site.description }}" property="og:description">
+    {% endif %}
+    {% if page.url %}
+      <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+    {% endif %}
+    {% if page.date %}
+      <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
+      <meta content="{{ site.url }}/about/" property="article:author">
+    {% endif %}
+
+
+
+      {% if page.thumbnail %}
+      <meta content="{{ site.url }}/assets/img/{{ page.thumbnail }}" property="og:image">
+      <meta name="twitter:image" content="{{ site.url }}/assets/img/{{page.thumbnail}}" />
+      {% else %}
+      <meta content="{{ site.url }}/assets/img/my-cathedral-by-philippe-clairo-navajo-nation-parks-2560x1600.jpg" property="og:image">
+      <meta name="twitter:image" content="{{ site.url }}/assets/img/my-cathedral-by-philippe-clairo-navajo-nation-parks-2560x1600.jpg" />
+      {% endif %}
+
+
+
+    <!-- I use the page.categories property for OG tags. -->
+  {% for tag in page.categories %}
+    <meta property="article:tag" content="{{tag}}" />
+  {% endfor %}
+
+  <!-- I prefer the summary_large_image Twitter card for posts. -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- You, you're the creator. -->
+  <meta name="twitter:creator" content="@{{site.twitter}}" />
+  <!-- This property is for the article title, not site title. -->
+  <meta name="twitter:title" content="{{page.title}}" />
