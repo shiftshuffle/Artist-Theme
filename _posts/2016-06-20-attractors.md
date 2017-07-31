@@ -5,6 +5,7 @@ date:   2016-06-20 09:11:03
 description:
 thumbnail: jong1.png
 categories: [math,code]
+comments: true
 author: Shift Shuffle
 ---
 

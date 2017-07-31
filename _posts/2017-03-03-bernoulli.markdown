@@ -5,7 +5,7 @@ date:   2017-03-03 09:11:03
 description: Bernoulli numbers.
 thumbnail: building1.jpg
 categories: [math,analytic,combinatoric]
-
+comments: true
 # Information for the author block
 author: Shift Shuffle
 ---

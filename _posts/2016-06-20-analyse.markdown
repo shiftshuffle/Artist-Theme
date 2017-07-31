@@ -5,6 +5,7 @@ date:   2016-06-20 09:11:03
 description: Analyse Harmonique sur des groupes finis
 thumbnail: land.jpg
 categories: [math]
+comments: true
 author: Shift Shuffle
 ---
 

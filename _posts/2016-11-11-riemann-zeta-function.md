@@ -5,6 +5,7 @@ date:   2016-11-11 09:11:03
 description: Euler Product and Riemann Zeta Function.
 thumbnail: my-cathedral-by-philippe-clairo-navajo-nation-parks-2560x1600.jpg
 categories: [math, number-theory]
+comments: true
 
 # Information for the author block
 author: Shift Shuffle

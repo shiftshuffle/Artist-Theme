@@ -5,6 +5,7 @@ date:   2016-07-07 09:11:03
 description:
 thumbnail: potala-palace-1920.jpg
 categories: [diary,art,lecture]
+comments: true
 author: Shift Shuffle
 ---
 

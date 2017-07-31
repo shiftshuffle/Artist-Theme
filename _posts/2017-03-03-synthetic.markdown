@@ -5,7 +5,7 @@ date:   2017-03-03 09:11:03
 description:
 thumbnail: nudib.jpg
 categories: [code]
-
+comments: true
 # Information for the author block
 author: Shift Shuffle
 ---

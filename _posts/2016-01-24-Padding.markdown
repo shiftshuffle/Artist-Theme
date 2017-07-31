@@ -5,6 +5,7 @@ date:   2016-01-24 09:11:03
 description: CBC Padding Oracle Attack
 thumbnail: antiquitera2.jpg
 categories: crypto
+comments: true
 author: Shift Shuffle
 ---
 This is an example of why in crypto implementation is crucial, it doesn't matter if you have a steel door, it doesn't do its function if you have a broken window.

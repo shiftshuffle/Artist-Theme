@@ -5,7 +5,7 @@ date:   2017-03-03 09:11:03
 description: Phasellus hendrerit. Pellent aliquet nibh nec urna. In nis aliquet vel, dapibus id,mattis.
 thumbnail: ama-dablam-nepal-mountains-hd-wallpaper.jpg
 categories: [pydefis,challenge,math,code]
-
+comments: true
 # Information for the author block
 author: shiftshuffle
 ---

@@ -5,6 +5,7 @@ date:   2016-06-20 09:11:03
 description: Julia Code
 thumbnail: map2.jpg
 categories: [pydefis,challenge,math,code]
+comments: true
 author: Shift Shuffle
 ---
 

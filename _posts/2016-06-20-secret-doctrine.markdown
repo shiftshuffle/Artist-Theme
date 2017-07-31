@@ -5,6 +5,7 @@ date:   2016-06-20 09:11:03
 description: The Secret Doctrine
 thumbnail: building1.jpg
 categories: [art,poems]
+comments: true
 author: Shift Shuffle
 ---
 
