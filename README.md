@@ -1,7 +1,10 @@
-#Artist Theme: A Free Theme for Jekyll Sites
+# math
 
-##Dependencies
-1. Jekyll
-2. Gulp
-3. Sass
-4. Jade
+git add .
+git commit -m 'latextweak'
+git push origin master
+
+git checkout gh-pages
+git rebase master
+git push origin gh-pages
+git checkout master

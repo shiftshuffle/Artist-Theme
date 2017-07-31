@@ -22,6 +22,7 @@
     <!-- facebook Open Graph Metadatas -->
     <meta content="your_facebook_app_id" property="fb:app_id">
     <meta content="M A T H E U X" property="og:site_name">
+
     
       <meta content="M A T H E U X" property="og:title">
     
@@ -37,9 +38,22 @@
     
     
       <meta content="http://localhost:4000/assets/img/my-cathedral-by-philippe-clairo-navajo-nation-parks-2560x1600.jpg" property="og:image">
+      <meta name="twitter:image" content="http://localhost:4000/assets/img/my-cathedral-by-philippe-clairo-navajo-nation-parks-2560x1600.jpg" />
+
     
-    
-    
+
+    <!-- I use the page.categories property for OG tags. -->
+  
+
+  <!-- I prefer the summary_large_image Twitter card for posts. -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- You, you're the creator. -->
+  <meta name="twitter:creator" content="@chronotope" />
+  <!-- This property is for the article title, not site title. -->
+  <meta name="twitter:title" content="M A T H E U X" />
+
+
+
 
 
 
@@ -101,13 +115,25 @@ extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
   <body>
 
 
-<div id="menu" class="slideout-menu slideout-closed"><div class="flexbox">
+<div id="menu" class="slideout-menu slideout-closed">
+  <div class="flexbox">
   <nav>
-    <h4>Pages</h4>
+  <section class="m-border-b">
+    <!-- <h4>Pages</h4> -->
+    <!-- <hr> -->
     <a href="http://localhost:4000">Home</a>
     <a href="http://localhost:4000/about.html">About</a>
     <a href="http://localhost:4000/archives.html">Archives</a>
-    <h4>Categories</h4>
+    <a href="https://shiftshuffle.github.io/math/latextool2">Editor</a>
+
+  </section>
+
+
+
+
+<section class="m-border-b">
+    <!-- <h4>Categories</h4> -->
+    <!-- <hr> -->
     <!-- <a href="http://localhost:4000/categories/category1.html">Category 1</a> -->
     <!-- Brand and toggle get grouped for better mobile display -->
 
@@ -150,11 +176,13 @@ extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
                     </div>
                 </div>
 
-
+</section>
             <!-- <li><a href="#"><span class="glyphicon glyphicon-bookmark"></span> Link</a></li> -->
 
             <!-- Dropdown-->
-          <h4>Date</h4>
+  <section class="m-border-b">
+          <!-- <h4>Date</h4> -->
+          <!-- <hr> -->
 
 
                 <a data-toggle="collapse" href="#dropdown-lvl3">
@@ -187,12 +215,61 @@ extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
                     </div>
                 </div>
 
+              </section>
+
+
+
+
 
   </nav>
-<div class="details">
+
+
+
+
+
+
+
+<!-- <div class="details">
   <b>M A T H E U X</b>
   <p> Test blog for Diary, Math & Code. Regards <a>ShiftShuffle</a> </p>
-</div></div></div>
+</div> -->
+<section class="m-border-b">
+  <div class='demopadding'>
+    <a href="https://facebook.com/sharer.php?u=http://localhost:4000/" rel="nofollow" target="_blank" title="Share on Facebook">
+    <div class='icon social fb'>
+        <i class='fa fa-facebook'></i>
+    </div>
+    </a>
+
+    <a href="https://twitter.com/intent/tweet?text=M A T H E U X&url=http://localhost:4000/&via=MathPaco&related=" rel="nofollow" target="_blank" title="Share on Twitter">
+      <div class='icon social tw'>
+        <i class='fa fa-twitter'></i>
+      </div>
+    </a>
+
+    <a href="https://plus.google.com/share?url=http://localhost:4000/" rel="nofollow" target="_blank" title="Share on Google+">
+      <div class='icon social go'>
+        <i class='fa fa-google-plus'></i>
+      </div>
+    </a>
+  </div>
+
+
+
+
+</section>
+
+
+<section class="m-border-b">
+
+</section>
+
+
+
+</div>
+
+
+</div>
 
 
 
@@ -202,10 +279,10 @@ extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
         
 
 
-<a href="/jblog/math/number-theory/2016/11/11/riemann-zeta-function.html">
+<a href="/math/number-theory/2016/11/11/riemann-zeta-function.html">
 <div class="xs-12 imgBack link textCenter vertCenter grow tall" style='background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ), url(http://localhost:4000/assets/img/my-cathedral-by-philippe-clairo-navajo-nation-parks-2560x1600.jpg)'>
   <div>
-    <a class='caps post-title' href='/jblog/math/number-theory/2016/11/11/riemann-zeta-function.html'><div class="special-title">
+    <a class='caps post-title' href='/math/number-theory/2016/11/11/riemann-zeta-function.html'><div class="special-title">
       <h3>M A T H E U X</h3>
     </div>
   </a>
@@ -217,10 +294,10 @@ extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
 
 <div class='flexbox wrap'>
 
-<a href="/jblog/code/2017/03/03/dna.html">
+<a href="/code/2017/03/03/dna.html">
   <div class="sm-6 imgBack link vertCenter textCenter grow short" style='background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ), url(http://localhost:4000/assets/img/20110202-mimi-protein.jpg)'>
     <div>
-      <a class='caps post-title' href='/jblog/code/2017/03/03/dna.html'><div class="special-title">
+      <a class='caps post-title' href='/code/2017/03/03/dna.html'><div class="special-title">
         <h3>Genetic Algorithm</h3>
       </div>
     </a>
@@ -234,10 +311,10 @@ extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
 
 <div class='flexbox'>
 
-<a href="/jblog/math/analytic/combinatoric/2017/03/03/bernoulli.html">
+<a href="/math/analytic/combinatoric/2017/03/03/bernoulli.html">
   <div class="sm-6 textPreview vertCenter grow short noimg">
     <div>
-      <a class='caps post-title' href='/jblog/math/analytic/combinatoric/2017/03/03/bernoulli.html'><div class="special-title">
+      <a class='caps post-title' href='/math/analytic/combinatoric/2017/03/03/bernoulli.html'><div class="special-title">
         <h3>Bernoulli Numbers</h3>
       </div>
     </a>
@@ -253,10 +330,10 @@ extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
 
 <div class='flexbox wrap'>
 
-<a href="/jblog/diary/art/lecture/2016/07/07/travelers.html">
+<a href="/diary/art/lecture/2016/07/07/travelers.html">
   <div class="sm-4 imgBack link vertCenter textCenter grow" style='background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) ), url(http://localhost:4000/assets/img/potala-palace-1920.jpg)'>
     <div>
-      <a class='caps post-title' href='/jblog/diary/art/lecture/2016/07/07/travelers.html'><div class="special-title">
+      <a class='caps post-title' href='/diary/art/lecture/2016/07/07/travelers.html'><div class="special-title">
         <h3>Travelers</h3>
       </div>
     </a>
@@ -270,10 +347,10 @@ extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
 
 <div class='flexbox'>
 
-<a href="/jblog/art/poems/2016/06/20/secret-doctrine.html">
+<a href="/art/poems/2016/06/20/secret-doctrine.html">
   <div class="sm-6 textPreview vertCenter grow short noimg">
     <div>
-      <a class='caps post-title' href='/jblog/art/poems/2016/06/20/secret-doctrine.html'><div class="special-title">
+      <a class='caps post-title' href='/art/poems/2016/06/20/secret-doctrine.html'><div class="special-title">
         <h3>The Secret Doctrine</h3>
       </div>
     </a>

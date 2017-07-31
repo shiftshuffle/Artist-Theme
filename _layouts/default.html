@@ -22,6 +22,7 @@
     <!-- facebook Open Graph Metadatas -->
     <meta content="your_facebook_app_id" property="fb:app_id">
     <meta content="{{ site.title }}" property="og:site_name">
+
     {% if page.title %}
       <meta content="{{ page.title }}" property="og:title">
     {% else %}
@@ -46,19 +47,27 @@
     {% endif %}
     {% if page.image %}
       <meta content="{{ page.image }}" property="og:image">
+      <meta name="twitter:image" content="{{page.image}}" />
     {% else %}
       <meta content="{{ site.url }}/assets/img/my-cathedral-by-philippe-clairo-navajo-nation-parks-2560x1600.jpg" property="og:image">
+      <meta name="twitter:image" content="{{ site.url }}/assets/img/my-cathedral-by-philippe-clairo-navajo-nation-parks-2560x1600.jpg" />
+
     {% endif %}
-    {% if page.categories %}
-      {% for category in page.categories limit:1 %}
-      <meta content="{{ category }}" property="article:section">
-      {% endfor %}
-    {% endif %}
-    {% if page.tags %}
-      {% for tag in page.tags %}
-      <meta content="{{ tag }}" property="article:tag">
-      {% endfor %}
-    {% endif %}
+
+    <!-- I use the page.categories property for OG tags. -->
+  {% for tag in page.categories %}
+    <meta property="article:tag" content="{{tag}}" />
+  {% endfor %}
+
+  <!-- I prefer the summary_large_image Twitter card for posts. -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- You, you're the creator. -->
+  <meta name="twitter:creator" content="@chronotope" />
+  <!-- This property is for the article title, not site title. -->
+  <meta name="twitter:title" content="{{page.title}}" />
+
+
+
 
 
 

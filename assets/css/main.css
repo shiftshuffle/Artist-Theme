@@ -1441,11 +1441,23 @@ nav .brand-logo2 {
   background-color: #212121 !important; }
 
 .nav > li > a:focus, .nav > li > a:hover {
-  text-decoration: underline;
-  background-color: #212121 !important; }
+  text-decoration: none;
+  background-color: #ffffff !important; }
 
 .nav > li > a:focus, .nav > li > a:hover {
-  text-decoration: underline !important; }
+  text-decoration: none !important; }
+
+  nav > a:focus, nav > a:hover {
+    text-decoration: none !important;
+    background-color: #212121 !important; }
+
+  nav  > a:focus, nav  > a:hover {
+    text-decoration: none !important; }
+
+
+    .m-border-b {
+    border-bottom: 1px solid #e5e5e5;
+}
 
 .post-title {
   color: rgba(19, 42, 112, 0.44); }
@@ -1817,8 +1829,8 @@ div.input_area > div.highlight {
   display: none; }
 
 #menu.slideout-menu.slideout-open {
-  background: #212121;
-  color: white;
+  background: #ffffff;
+  /*color: white;*/
   position: fixed;
   top: 0;
   left: 0;
@@ -1840,10 +1852,11 @@ div.input_area > div.highlight {
     margin-bottom: 5px; }
   #menu.slideout-menu .flexbox nav a {
     display: block;
-    padding: 5px 5px 5px 30px;
-    font-size: 20px;
+    padding: 20px 5px 5px 30px;
+    font-size: 14px;
     color: #6ed3c4;
-    font-weight: 500; }
+    font-weight: 500;
+   }
   #menu.slideout-menu .flexbox .details {
     border-top: solid 2px #757575;
     padding-top: 10px; }
