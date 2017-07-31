@@ -1,7 +1,7 @@
 # math
 
 git add .
-git commit -m 'latextweak'
+git commit -m 'meta share'
 git push origin master
 
 git checkout gh-pages
